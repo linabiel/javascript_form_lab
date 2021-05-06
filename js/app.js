@@ -35,11 +35,9 @@ const handleFormSubmit = function (event) {
   list.appendChild(listItem);
   
   document.getElementById('new-item-form').reset();
-
-  const handleButtonClick = function (event) {
-    const readinglist = document.querySelector('#reading-list');
-    readinglist.innerHTML = '';
-    
     
   }
+  
+  const handleButtonClick = function (event) {
+    window.location.reload()
 }
