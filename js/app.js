@@ -5,40 +5,41 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', handleFormSubmit);
 
   const deleteButton = document.querySelector('#delete-button');
-	button.addEventListener('click', handleButtonClick);
+	deletebutton.addEventListener('click', handleButtonClick);
 
 
 });
 
 const handleFormSubmit = function (event) {
-  const list = document.querySelector('ul');
   event.preventDefault();
+  const list = document.querySelector('#reading-list');
 
   const title = event.target.title.value;
   const author = event.target.author.value;
   const category = event.target.category.value;
 
-  const listTitle = document.createElement('li');
+  const listItem = document.createElement('li');
+
   const h2 = document.createElement('h2');
-  listTitle.textContent = `${title}`;
-  list.appendChild(h2)
-  h2.appendChild(listTitle)
+  h2.textContent = `${title}`;
+  listItem.appendChild(h2)
 
-
-  const listAuthor = document.createElement('li');
   const h3 = document.createElement('h3');
-  listAuthor.textContent = `${author}`;
-  list.appendChild(h3)
-  h3.appendChild(listAuthor)
+  h3.textContent = `${author}`;
+  listItem.appendChild(h3)
 
-  const listCategory = document.createElement('li');
-  listCategory.textContent = `${category}`;
-  list.appendChild(listCategory)
+  const p = document.createElement('p');
+  p.textContent = `${category}`;
+  listItem.appendChild(p)
+
+  list.appendChild(listItem);
+  
   document.getElementById('new-item-form').reset();
 
-  const handleButtonClick = function () {
-    const deleteButton = document.querySelector('delete-button')
-
+  const handleButtonClick = function (event) {
+    const readinglist = document.querySelector('#reading-list');
+    readinglist.innerHTML = "";
+    
     
   }
 }

@@ -3,15 +3,17 @@ body {
 }
 
 li {
-  list-style: none;
+  margin: 30px;
+  background-color: rgba(64, 231, 231, 0.897);
+  box-shadow: 2px 2px 20px rgba(6, 46, 77, 0.4);
+  width: 200px;
+  height: 200px;
 }
 
 ul {
-  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
   margin: 20px;
 }
 
-section {
-  background-color: rgba(64, 231, 231, 0.897);
-  box-shadow: 2px 2px 20px rgba(6, 46, 77, 0.4);
-}
