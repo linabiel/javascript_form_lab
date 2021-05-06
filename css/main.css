@@ -4,10 +4,13 @@ body {
 
 li {
   margin: 30px;
-  background-color: rgba(64, 231, 231, 0.897);
+  background-color: rgba(88, 139, 248, 0.603);
   box-shadow: 2px 2px 20px rgba(6, 46, 77, 0.4);
   width: 200px;
   height: 200px;
+  padding: 10px;
+  border: 1px solid rgb(rgb(24, 20, 31), green, blue);
+  border-radius: 5px;
 }
 
 ul {
