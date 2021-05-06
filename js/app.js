@@ -26,5 +26,5 @@ const handleFormSubmit = function (event) {
   const listCategory = document.createElement('li');
   listCategory.textContent = `${category}`;
   list.appendChild(listCategory)
-
+  document.getElementById('new-item-form').reset();
 }
