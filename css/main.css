@@ -5,3 +5,13 @@ body {
 li {
   list-style: none;
 }
+
+ul {
+  padding: 10px;
+  margin: 20px;
+}
+
+section {
+  background-color: rgba(64, 231, 231, 0.897);
+  box-shadow: 2px 2px 20px rgba(6, 46, 77, 0.4);
+}
