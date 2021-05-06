@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-const list = document.querySelector('ul');
 const handleFormSubmit = function (event) {
+  const list = document.querySelector('ul');
   event.preventDefault();
   const title = event.target.title.value;
   const author = event.target.author.value;
