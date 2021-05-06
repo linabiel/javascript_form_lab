@@ -23,8 +23,14 @@ ul {
 form {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 form div {
   display: flex;
+  align-items: center;
+}
+
+input {
+  margin: 0 10px 0 10px;
 }

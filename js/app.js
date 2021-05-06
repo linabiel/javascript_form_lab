@@ -37,7 +37,13 @@ const handleFormSubmit = function (event) {
   document.getElementById('new-item-form').reset();
     
   }
-  
+
   const handleButtonClick = function (event) {
-    window.location.reload()
+    const readingList = document.querySelector('#reading-list');
+    document.getElementById('readingList').innerHTML
+      
+  }
+
+  // const handleButtonClick = function (event) {
+  //   window.location.reload()
 }
