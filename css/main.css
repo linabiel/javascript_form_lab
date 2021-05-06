@@ -20,3 +20,11 @@ ul {
   margin: 20px;
 }
 
+form {
+  display: flex;
+  justify-content: space-around;
+}
+
+form div {
+  display: flex;
+}
